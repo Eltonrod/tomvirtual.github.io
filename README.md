@@ -1,1 +1,1 @@
-# http://tomvirtual.github.io
+# http://tomvirtual.io
