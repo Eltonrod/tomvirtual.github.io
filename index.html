@@ -6,7 +6,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <script language="JavaScript" src="eventos.js"></script>
-  <title>** Tom virtual - Soluções web**</title>
+  <title>||* Tom virtual *|| Soluções web</title>
 <style>
 *{
   box-sizing: border-box;
@@ -36,19 +36,16 @@ body{
   color: #DAA520;
   font-size: 20px;
 }
-
 /*efeito sobre as imagens*/
 .zoom {
   overflow: hidden;
 }
-
 .zoom img {
   max-width: 100%;
   -moz-transition: all 0.1s;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
 }
-
 .zoom:hover img {
   -moz-transform: scale(1.5);
   -webkit-transform: scale(1.5);
@@ -81,7 +78,7 @@ body{
   color: white;
 }
 .corpo{
-  position: fixed;
+  position: absolute;
   margin-top: 120px;
   width: calc(100% - 200px);
   right: 0;
@@ -159,12 +156,11 @@ text-align: center;
   flex-direction: column;
   align-items: center;
 }
-#opcContato{
+#opcContato div{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content:space-between;
 }
-
 .rodape{
   width: 100%;
   padding: 0,5%;
@@ -172,7 +168,6 @@ text-align: center;
   text-align: center;
 }
 @media(max-width: 960px){
-
 .menu{
   position: absolute;
   width: 100%;
@@ -190,7 +185,6 @@ text-align: center;
 .menu #logoSimbolo{
   width: 10%;
 }
-
 #solucoes, #nomeDesenvolvedor{
   display: none;
 }
@@ -202,14 +196,12 @@ text-align: center;
   width: 95vw;
   margin-bottom: 10px;
   }
-
 #opcContato{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  justify-content: center;
-  }
 
+  }
 .menu-ico{
   display: block;
   position: fixed;
@@ -267,6 +259,8 @@ text-align: center;
   margin-top: -1%;
 }
 }
+
+
 </style>
 
 </head>
@@ -364,14 +358,14 @@ Em um mundo cada vez mais digital, ter um site é fundamental para qualquer neg�
   <h1>Entre em contato</h1>
   <div id="opcContato">
     <div>
-      <h3>Por telefone ou whatsApp:</h3>
-      <img src="telefone.png">
-      <h4>(11) 9.8865-0030</h4>
+
+      <i class="fas fa-phone-square">(11) 9.8865-0030</i>
+
     </div>
+    <br>
     <div>
-      <h3>Por e-mails:</h3>
-      <img src="email.png">
-      <h4>elton.rsilva@hotmail.com</h4>
+      <i class="fas fa-at">elton.rsilva@hotmail.com</i>
+
     </div>
 
   </div>
