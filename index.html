@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-  <script language="JavaScript" src="eventos.js"></script>
   <title>||* Tom virtual *|| Soluções web</title>
 <style>
 *{
@@ -17,6 +16,10 @@ html, body{
 body{
   font-family: "Open Sans";
   }
+h1{
+  text-align: center;
+  font-weight: bold;
+}
   .menu{
     position: fixed;
     top: 0px;
@@ -27,7 +30,6 @@ body{
     justify-content:center;
     flex-direction: column;
     align-items:center;
-    font-style: none;
     }
 .menu img{
     border-radius: 50%;
@@ -90,12 +92,11 @@ body{
   right: 0;
 }
 .home{
-  padding: 10px 100px;
+
 text-align: center;
 }
 .home i{
   font-size: 40px;
-  padding: 5px;
 }
 .menu-ico{
   font-size: 30px;
@@ -130,8 +131,8 @@ text-align: center;
   font-size: 25px;
   flex-shrink: 0;
   flex-direction: column;
-  padding: 5px;
-  margin: 5px;
+  padding: 0 5px;
+  margin: 50px 200px;
   box-shadow: 0px 0px 20px 3px #4B0082;
   text-align: center;
   width: 350px;
@@ -140,14 +141,7 @@ text-align: center;
 .prog h3{
   margin: 0;
 }
-.eventos{
-  display: flex;
-  overflow: auto;
-  width: auto;
-  height: 100%;
-  align-items: center;
-  padding: 0 32px;
-}
+
 .eventos{
   width: 70vw;
   flex-shrink: 0;
@@ -174,6 +168,11 @@ text-align: center;
   text-align: center;
 }
 @media(max-width: 960px){
+
+main{
+  width: 100%;
+}
+
 .menu{
   position: absolute;
   width: 100%;
@@ -183,7 +182,7 @@ text-align: center;
   justify-content:space-around;
   flex-direction: row;
   align-items:center;
-  font-style: none;
+
 }
 .menu #fotoPerfil2, #redesSociais{
   display: none;
@@ -199,10 +198,30 @@ text-align: center;
   width: 100%;
   margin-top: 120px;
   }
-.eventos{
-  width: 95vw;
-  margin-bottom: 10px;
+  .prog{
+    display: flex;
+    font-size: 25px;
+    flex-shrink: 0;
+    flex-direction: column;
+    padding: 5px;
+    margin: 5px;
+    box-shadow: 0px 0px 20px 3px #4B0082;
+    text-align: center;
+    width: 350px;
+    height: 400px;
   }
+
+
+  .eventos{
+    display: flex;
+    overflow: auto;
+    width: auto;
+    height: 100%;
+    align-items: center;
+    padding: 0 32px;
+  }
+
+
 #opcContato{
   display: flex;
   flex-direction: column;
@@ -211,8 +230,8 @@ text-align: center;
   }
 .menu-ico{
   display: block;
-  position: fixed;
-  color: black;
+  position: absolute;
+  color: white;
   right: 10px;
   }
   .banner-titulo{
@@ -319,6 +338,14 @@ Em um mundo cada vez mais digital, ter um site é fundamental para qualquer neg�
     <h3>Fazer uso das principais ferramentas do mercado e técnicas de responsividade, onde as páginas se adequem ao aparelho do cliente: celular, tablet ou desktop.</h3>
   </div>
       <div class="eventos">
+        <div class="icoTec">
+          <i class="fab fa-php"></i>
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+          <i class="fab fa-js"></i>
+          <i class="fab fa-python"></i>
+          <i class="fas fa-file-code"></i>
+      </div>
         <div id="programacao1" class="prog">
           <h3>Criar sites</h3>
           <center><img src="ferramentas.jpg" width="80%"></center>
@@ -337,21 +364,13 @@ Em um mundo cada vez mais digital, ter um site é fundamental para qualquer neg�
         <div id="programacao4" class="prog">
           <h3>Ações promocionais</h3>
           <center><img src="marketing.png"width="77%"><center>
-          <p>Criação de landpages para lançamentos e envio de e-mails marketing</p>
+          <p>Criação de landpages para lançamentos e montagem de e-mails marketing</p>
         </div>
         <div id="programacao7" class="">
         .
         </div>
       </div>
-      <div class="icoTec">
-        <i class="fab fa-php"></i>
-        <i class="fab fa-html5"></i>
-        <i class="fab fa-css3-alt"></i>
-        <i class="fab fa-js"></i>
-        <i class="fab fa-python"></i>
-        <i class="fas fa-file-code"></i>
-        <i class="fas fa-table"></i>
-    </div>
+
 
       <section id="sobre" class="sobre">
         <h2>Currículo</h2>
