@@ -5,306 +5,8 @@
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/estilo.css">
   <title>||* Tom virtual *|| Soluções web</title>
-<style>
-*{
-  box-sizing: border-box;
-  }
-html, body{
-  margin: 0;
-  }
-body{
-  font-family: "Open Sans";
-  }
-h1{
-  text-align: center;
-  font-weight: bold;
-}
-  .menu{
-    position: fixed;
-    top: 0px;
-    width: 200px;
-    height: 100%;
-    background-color: black;
-    display: flex;
-    justify-content:center;
-    flex-direction: column;
-    align-items:center;
-    }
-.menu img{
-    border-radius: 50%;
-  }
-.menu a:hover{
-  color: #DAA520;
-  font-size: 20px;
-}
-.icoTec i{
-  font-size: 250%;
-  position: relative;
-  padding: 0 4%;
-  text-align: center;
-  justify-content:space-around;
-}
-/*efeito sobre as imagens*/
-.zoom {
-  overflow: hidden;
-}
-.zoom img {
-  max-width: 100%;
-  -moz-transition: all 0.1s;
-  -webkit-transition: all 0.1s;
-  transition: all 0.1s;
-}
-.zoom:hover img {
-  -moz-transform: scale(1.5);
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5);
-}
-#fotoCurriculo{
-  display: none;
-  width: 30%;
-  margin-left: 30%;
-}
-  .itemMenu{
-    text-decoration: none;
-    color: white;
-    padding: 14px 0;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  #logoSimbolo{
-    border-radius: 0%;
-    width: 30%;
-  }
-#redesSociais a{
-  padding: 0 2px;
-}
-#solucoes{
-  color: #DAA520;
-  font-size: 14px;
-}
-#nomeDesenvolvedor{
-  color: 	#5F9EA0;
-  font-size: 15px;
-  font-weight: bold;
-}
-#whats{
-  color: white;
-}
-.corpo{
-  position: absolute;
-  width: calc(100% - 200px);
-  right: 0;
-}
-.home{
-
-text-align: center;
-}
-.home i{
-  font-size: 40px;
-  padding: 5% 10%;
-}
-.menu-ico{
-  font-size: 30px;
-  color: white;
-  display: none;
-}
-.sobre{
-  background-color: #DAA520;
-  display: flex;
-  flex-direction: row;
-  font-size: 15px;
-  padding: 0 5%;
-}
-.sobre h2{
-  padding: 10px 1%;
-  flex-shrink: 0;
-}
-.sobre #curriculo{
-  padding: 20px 1%;
-  font-size: 18px;
-  align-items: center;
-  text-align: justify;
-}
-#tituloServico{
-  padding: 0 10px;
-  padding-left: 50px;
-  align-items: center;
-  text-align: justify;
-}
-.prog{
-  display: flex;
-  font-size: 25px;
-  flex-shrink: 0;
-  flex-direction: column;
-  padding: 0 5px;
-  margin: 50px 200px;
-  box-shadow: 0px 0px 20px 3px #4B0082;
-  text-align: center;
-  width: 350px;
-  height: 400px;
-}
-.prog h3{
-  margin: 0;
-}
-
-.eventos {
-  width: 70vw;
-  flex-shrink: 0;
-  margin: 0;
-  justify-content:space-between;
-  text-align: center;
-}
-#programacao7{
-  color:rgba(255,255,255,0);
-}
-.contato{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: #5F9EA0;
-}
-.rodape{
-  font-size: 13px;
-  width: 100%;
-  padding: 0 10%;
-  margin-bottom: 0;
-  background: #008B8B;
-  text-align: center;
-}
-@media(max-width: 960px){
-
-main{
-  width: 100%;
-}
-.menu{
-  position: absolute;
-  width: 100%;
-  height: 60px;
-  font-size: 13px;
-  display: flex;
-  justify-content:space-around;
-  flex-direction: row;
-  align-items:center;
-}
-.home img{
-  width: 60%;
-
-}
-.menu a{
-  font-size: 12px;
-}
-.menu #fotoPerfil2, #redesSociais, #whats{
-  display: none;
-}
-.menu #logoSimbolo{
-  width: 10%;
-}
-#solucoes, #nomeDesenvolvedor{
-  display: none;
-}
-.corpo{
-  position: absolute;
-  width: 100%;
-  margin-top: 120px;
-  }
-  .prog{
-    display: flex;
-    font-size: 25px;
-    flex-shrink: 0;
-    flex-direction: column;
-    padding: 5px;
-    margin: 5px;
-    box-shadow: 0px 0px 20px 3px #4B0082;
-    text-align: center;
-    width: 350px;
-    height: 400px;
-  }
-
-.icoTec i{
-      text-align: center;
-      padding: 10px 0;
-  }
-
-  .eventos{
-    display: flex;
-    overflow: auto;
-    width: auto;
-    height: 100%;
-    align-items: center;
-    padding: 0 32px;
-  }
-#fotoCurriculo{
-  display: block;
-  border-radius: 50%;
-}
-
-#opcContato{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-
-  }
-.menu-ico{
-  display: block;
-  position: absolute;
-  color: white;
-  right: 10px;
-  }
-  .banner-titulo{
-    font-size: 10px;
-    right: 30%;
-    top:  5%;
-  }
-  .banner-titulo #texto-banner{
-    position: relative;
-    margin-top: 5%;
-    flex-direction: column;
-    flex-shrink: 0;
-    padding: 0;
-    margin: 5%;
-  }
-.banner-titulo #texto-banner h1{
-  margin-top: -2%;
-}
-.banner-titulo img{
-  position: relative;
-  margin-top: 5%;
-  height: 100px;
-}
-.sobre{
-  display: flex;
-  flex-direction: column;
-}
-.sobre h2{
-  text-align: center;
-  flex-shrink: 0;
-  padding: 0;
-}
-.sobre #curriculo{
-  padding: 0;
-  font-size: 20px;
-  text-align: justify;
-}
-}
-@media(max-width: 560px){
-.banner-titulo{
-  font-size: 6px;
-  right: 30%;
-  top:  6%;
-}
-.banner-titulo img{
-  position: relative;
-  margin-top: 7%;
-  height: 40px;
-}
-.banner-titulo #texto-banner h1{
-  margin-top: -1%;
-}
-}
-
-
-</style>
 
 </head>
 <body>
@@ -312,12 +14,12 @@ main{
 <header class="menu">
 
     <nav id="menu" class="menu">
-      <img id="logoSimbolo" src="logoSimbolo2.jpg"width="130" height="60" onLoad="trocaImg();">
+      <img id="logoSimbolo" src="img/logoSimbolo2.jpg" height="40" onLoad="trocaImg();">
       <div id="solucoes">
       Sites e sistemas web
     </div>
       <br>
-      <img class="zoom" id="fotoPerfil2"src="fotoPerfil2.jpg" width="50%">
+      <img class="zoom" id="fotoPerfil2"src="img/fotoPerfil2.jpg" width="50%">
       <div id="nomeDesenvolvedor">
       Elton Rodrigues
     </div>
@@ -328,13 +30,13 @@ main{
       <a class="itemMenu" href="#programacao">Contato</a>
       <br>
       <div id="whats">
-        <a target="_blank"><img src="whats.png" width="30px" height="30px" title="WhatsApp">(11) 9.8865-0030<br></a>
+        <a target="_blank"><img src="img/whats.png" width="30px" height="30px" title="WhatsApp">(11) 9.8865-0030<br></a>
     </div>
       <div id="redesSociais">
-        <a class="zoom" href="https://www.facebook.com/elton.rodrigues.315080" target="_blank"><img src="facebook.png" width="30px" height="30px" title="Facebook"></a>
-        <a class="zoom" href="https://www.linkedin.com/in/eltonrsilva/" target="_blank"><img src="linkedin.jpg" width="30px" height="30px"title="Linkedin"></a>
-        <a class="zoom" href="https://github.com/Eltonrod" target="_blank"><img src="github.png" width="30px" height="30px"title="GitHub"></a>
-        <a class="zoom" href="https://pt.stackoverflow.com/users/86405/elton-rodrigues" target="_blank"><img src="stackoverflow.jpg" width="30px" height="30px"title="Stack overflow"></a>
+        <a class="zoom" href="https://www.facebook.com/elton.rodrigues.315080" target="_blank"><img src="img/facebook.png" width="30px" height="30px" title="Facebook"></a>
+        <a class="zoom" href="https://www.linkedin.com/in/eltonrsilva/" target="_blank"><img src="img/linkedin.jpg" width="30px" height="30px"title="Linkedin"></a>
+        <a class="zoom" href="https://github.com/Eltonrod" target="_blank"><img src="img/github.png" width="30px" height="30px"title="GitHub"></a>
+        <a class="zoom" href="https://pt.stackoverflow.com/users/86405/elton-rodrigues" target="_blank"><img src="img/stackoverflow.jpg" width="30px" height="30px"title="Stack overflow"></a>
       </div>
     </nav>
 </header>
@@ -342,7 +44,7 @@ main{
 <div class="corpo">
 <main>
 <section id="home" class="home">
-    <img src="logoAmar.jpg">
+    <img src="img/logoAmar.jpg">
   <h4>Que tal dar um passo para o mundo virtual criando um site para a sua empresa? <br>
 Em um mundo cada vez mais digital, ter um site é fundamental para qualquer negócio. Desenvolvo sites, Landpages, manutenção e modernização de páginas existentes e também sistemas web.</h4>
 <i class="fas fa-desktop"> Desktop</i>
@@ -366,23 +68,23 @@ Em um mundo cada vez mais digital, ter um site é fundamental para qualquer neg�
       </div>
         <div id="programacao1" class="prog">
           <h3>Criar sites</h3>
-          <center><img src="ferramentas.jpg" width="80%"></center>
+          <center><img src="img/ferramentas.jpg" width="80%"></center>
           <p>Construção de sites e landpages estáticos ou com interações.</p>
         </div>
         <div id="programacao2" class="prog">
           <h3>Manutenção de páginas</h3>
-          <center><img src="manutencao.png"width="85%"></center>
+          <center><img src="img/manutencao.png"width="85%"></center>
           <p>Deseja manter a sua página, podemos atualizar ou fazer correções.</p>
         </div>
         <div id="programacao3" class="prog">
           <h3>Sistemas Web</h3>
-          <center><img src="sistemaWeb.png"width="85%"></center>
+          <center><img src="img/sistemaWeb.png"width="85%"></center>
           <p>Controle o seu negócio de onde estiver com sistemas de gestão na web</p>
         </div>
         <div id="programacao4" class="prog">
           <h3>Ações promocionais</h3>
-          <center><img src="marketing.png"width="77%"><center>
-          <p>Criação de landpages para lançamentos e montagem de e-mails marketing</p>
+          <center><img src="img/marketing.png"width="77%"><center>
+          <p>Criação de landpages de eventos ou lançamentos e e-mails marketing personalizados</p>
         </div>
         <div id="programacao7" class="">
         .
@@ -393,7 +95,7 @@ Em um mundo cada vez mais digital, ter um site é fundamental para qualquer neg�
       <section id="sobre" class="sobre">
         <h1>CURRÍCULO</h1>
           <div id="curriculo">
-            <img id="fotoCurriculo"class="zoom" id="fotoPerfil2"src="fotoPerfil2.jpg" width="50%">
+            <img id="fotoCurriculo"class="zoom" id="fotoPerfil2"src="img/fotoPerfil2.jpg" width="50%">
             <p>Curioso por vocação. Sempre recebendo bons <i>feedbacks</i> pela capacidade em buscar respostas e soluções para problemas. Desse modo, a carreira se desenvolveu nos primeiros anos em setores comerciais, administrativos e <i>supply chain</i>. Sempre com destante em funções envolvendo tecnologias. Estive envolvido com sistemas SAP, Microsiga, BI, Excel para montagem de KPI’s e relatórios, entre outras tecnologias.</p>
             <p>Formado em <i>análise e desenvolvimento de sistemas</i>, pela Unip. Estudante de <i>engenharia da computação</i> pela Universidade virtual do estado de São Paulo, a UNIVESP. Sempre em busca por atualizações e novas tecnologias para desenvolver novos projetos e sempre se colocando em contato com salas de aulas e profissionais da área. Abaixo alguns cursos recentes que possibilitaram novos aperfeiçoamentos: </p>
             <h5>Udemy: machine learning e data science com python - Em curso</h5>
