@@ -130,11 +130,8 @@ text-align: center;
   align-items: center;
   flex-direction: column;
   padding: 0;
-  margin: 50px 200px;
+  margin: 50px 100px;
   box-shadow: 0px 0px 30px 6px #F08080;
-  text-align: center;
-  width: 350px;
-  height: 330px;
 }
 .prog h3{
   margin: 0;
