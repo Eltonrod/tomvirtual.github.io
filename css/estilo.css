@@ -234,7 +234,8 @@ main{
 
 .prog h3{
   font-size: 23px;
-  margin-botton: 10px;
+  /*margin-botton: 10px;*/
+padding-botton: 10px;
   margin: 0;
   width: 400px;
   display: flex;
