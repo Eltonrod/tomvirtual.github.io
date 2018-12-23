@@ -137,7 +137,7 @@ text-align: center;
 .prog h3{
   padding: 10px;
   margin: 0;
-  width: 400px;
+  width: 400px; 
   display: flex;
   flex-direction:column;
   font-size: 25px;
@@ -237,8 +237,6 @@ main{
   font-size: 23px;
   margin-botton: 20px;
   margin: 0;
-  width: 400px;
-  display: flex;
   flex-direction:column;
   }
 .prog p{
