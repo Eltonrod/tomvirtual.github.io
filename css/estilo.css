@@ -232,6 +232,7 @@ main{
   height: 280px;
   }
 .prog h3{
+	position: absolute;
   font-size: 23px;
   padding: 5px;
   }
