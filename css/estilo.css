@@ -133,13 +133,25 @@ text-align: center;
   margin: 50px 100px;
   box-shadow: 0px 0px 30px 6px #F08080;
   text-align: center;
+  padding: 10px;
 }
 .prog h3{
+  padding: 10px;
   margin: 0;
+  width: 400px;
+  display: flex;
+  flex-direction:column;
 }
-
+.prog p{
+  margin: 0;
+  padding: 10px;
+}
+.progFotos{
+  width: 250px;
+  height: 200px;
+}
 .eventos {
-  
+
   flex-shrink: 0;
   margin: 0;
   justify-content:space-between;
@@ -218,6 +230,21 @@ main{
   }
 .prog h3{
   font-size: 23px;
+  }
+.prog h3{
+  padding: 5px;
+  margin: 0;
+  width: 400px;
+  display: flex;
+  flex-direction:column;
+  }
+.prog p{
+  margin: 0;
+  padding: 10px;
+  }
+.progFotos{
+  width: 200px;
+  height: 100px;
   }
 .icoTec i{
   text-align: center;
