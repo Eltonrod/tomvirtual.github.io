@@ -124,7 +124,6 @@ text-align: center;
   text-align: justify;
 }
 .prog{
-  display: flex;
   font-size: 25px;
   flex-shrink: 0;
   align-items: center;
