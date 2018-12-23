@@ -125,7 +125,6 @@ text-align: center;
   text-align: justify;
 }
 .prog{
-  
   flex-shrink: 0;
   align-items: center;
   flex-direction: row;
@@ -149,8 +148,6 @@ text-align: center;
   margin: 0;
   padding: 10px;
   font-size: 23px;
-}
-.prog ul, li{
   list-style-type: none;
 }
 .progFotos{
@@ -158,7 +155,6 @@ text-align: center;
   height: 200px;
 }
 .eventos {
-
   flex-shrink: 0;
   margin: 0;
   justify-content:space-between;
