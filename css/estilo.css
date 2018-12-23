@@ -124,7 +124,7 @@ text-align: center;
   text-align: justify;
 }
 .prog{
-  font-size: 25px;
+  
   flex-shrink: 0;
   align-items: center;
   flex-direction: row;
@@ -140,10 +140,13 @@ text-align: center;
   width: 400px;
   display: flex;
   flex-direction:column;
+  font-size: 25px;
+  font-weight: bold;
 }
 .prog p{
   margin: 0;
   padding: 10px;
+  font-size: 20px;
 }
 .progFotos{
   width: 250px;
