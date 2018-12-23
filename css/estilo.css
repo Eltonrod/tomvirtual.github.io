@@ -233,6 +233,7 @@ main{
   }
 
 .prog h3{
+  padding: 0;
   font-size: 23px;
   margin-botton: 20px;
   margin: 0;
