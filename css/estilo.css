@@ -6,10 +6,19 @@ html, body{
   }
 body{
   font-family: "sans-serif";
-  }
+    }
 h1{
   text-align: center;
   font-weight: bold;
+}
+h4{
+  padding: 0 30px;
+  margin: 0;
+  font-size: 22px;
+}
+h5{
+  padding: 5px 0;
+  margin: 0;
 }
 .menu{
   position: fixed;
@@ -36,6 +45,7 @@ h1{
   padding: 0 4%;
   text-align: center;
   justify-content:space-around;
+  color: #2F4F4F;
 }
 /*efeito sobre as imagens*/
 .zoom {
@@ -93,24 +103,40 @@ h1{
   right: 0;
 }
 .home{
+  text-align: center;
+  background: #FFA500;
+  opacity:0.78;
+  color: black;
+  font-family: "Lucida Bright", "Georgia", "serif";
+  border-radius: 5px 60px ;
+  padding: 10px;
+  margin: 60px;
+  text-align: center;
+  }
+  #smile{
+    padding: 0;
+  }
 
-text-align: center;
-}
 .home i{
-  font-size: 40px;
-  padding: 5% 10%;
+  font-size: 25px;
+  padding: 15px 5%;
+  color: black;
 }
 .menu-ico{
   font-size: 30px;
   color: white;
   display: none;
 }
+
 .sobre{
-  background-color: #DAA520;
+  background-color: #FF6347;
   display: flex;
   flex-direction: row;
-  font-size: 15px;
-  padding: 0 5%;
+  font-size: 13px;
+  padding: 0 2%;
+  color: #483D8B;
+  margin: 0 80px;
+  align-items: flex-start;
 }
 .sobre h2{
   padding: 10px 1%;
@@ -118,7 +144,7 @@ text-align: center;
 }
 .sobre #curriculo{
   padding: 20px 1%;
-  font-size: 18px;
+  font-size: 20px;
   align-items: center;
   text-align: justify;
 }
@@ -133,10 +159,10 @@ text-align: center;
   align-items: center;
   flex-direction: row;
   padding: 0;
-  margin: 50px 100px;
-  box-shadow: 0px 0px 30px 6px #F08080;
+  margin: 35px 100px;
+  box-shadow: 0px 0px 30px 10px #F08080;
   text-align: center;
-  padding: 10px;
+  background: white;
 }
 .prog h3{
   margin: 0;
@@ -151,9 +177,9 @@ text-align: center;
   font-size: 23px;
   list-style-type: none;
 }
-.progFotos{
-  width: 200px;
-  height: 200px;
+.prog img{
+  width: 400px;
+  height: 300px;
 }
 .eventos {
   flex-shrink: 0;
@@ -161,7 +187,18 @@ text-align: center;
   justify-content:space-between;
   text-align: center;
 }
-
+.programacao{
+  background: #B0C4DE;
+  z-index:1;
+  opacity:.9;
+  padding-top: 1px;
+}
+.programacao i{
+  background: #F08080;
+  border-radius: 30px 30px 10px  10px ;
+  margin: 0 20px;
+  padding: 10px 30px;
+}
 #programacao7{
   color:rgba(255,255,255,0);
 }
@@ -171,20 +208,15 @@ text-align: center;
   align-items: center;
   background: #D8BFD8;
   z-index:1;
-	opacity:.8;
-  font-weight: bold;
-
-}
-.rodape{
-  font-size: 13px;
-  width: 100%;
-  background: #008B8B;
+	opacity:.9;
+  font-size: 19px;
   text-align: center;
+  font-weight: bold;
 }
-h4{
-  padding: 0;
-  margin: 0;
+.contato i{
+  font-size: 50px;
 }
+
 @media(max-width: 960px){
 
 main{
@@ -200,39 +232,54 @@ main{
   flex-direction: row;
   align-items:center;
 }
+.home{
+  padding: 5px;
+  margin: 60px 15px;
+}
 .home img{
   width: 60%;
 
 }
 .menu a{
   font-size: 12px;
+  position: relative;
+  font-size: 17px;
+  top: -15px;
 }
 .menu #fotoPerfil2, #redesSociais, #whats{
   display: none;
 }
 .menu #logoSimbolo{
   width: 10%;
+  margin: 0;
+  position: relative;
+  top: -15px;
 }
 #solucoes, #nomeDesenvolvedor{
   display: none;
+
 }
 .corpo{
   position: absolute;
   width: 100%;
-  margin-top: 120px;
+  margin-top: 20px;
   }
 .prog{
   /*display: flex;*/
   font-size: 23px;
   flex-shrink: 0;
   flex-direction: column;
-  margin: 5px;
-  box-shadow: 10px 0px 70px 5px #F08080;
+  margin: 0px;
+  box-shadow: 5px 0px 60px 1px #F08080;
   text-align: center;
-  width: 250px;
-  height: 280px;
+  width: 330px;
+  height: 260px;
+  margin: 0 10px;
   }
-
+.prog img{
+  width: 150px;
+  height: 100px;
+  }
 .prog h3{
   padding: 0;
   font-size: 22px;
@@ -241,17 +288,19 @@ main{
   }
 .prog p{
   margin: 0;
-  padding: 10px;
-  font-size: 21px;
-  padding-top: 15px;
+  font-size: 14px;
+  padding-top: px;
   }
-.prog img{
-  width: 200px;
-  height: 100px;
-  }
+
 .icoTec i{
   text-align: center;
   padding: 5px 0;
+  }
+.programacao i{
+  background: #B0C4DE;
+  border-radius: 0 ;
+  margin: 0;
+  padding:10% 0;
   }
 .eventos{
   display: flex;
@@ -259,15 +308,17 @@ main{
   width: auto;
   height: 100%;
   align-items: center;
-  padding: 0 32px;
+  padding: 0 2px;
+
   }
+
 #fotoCurriculo{
   display: block;
   border-radius: 50%;
 }
 #opcContato{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   }
 .menu-ico{
@@ -300,11 +351,17 @@ main{
 .sobre{
   display: flex;
   flex-direction: column;
+  margin: 0;
+
+}
+h1, h5, p{
+  font-size: 16px;
 }
 .sobre h2{
   text-align: center;
   flex-shrink: 0;
   padding: 0;
+  font-size: 15px;
 }
 .sobre #curriculo{
   padding: 0;
