@@ -6,15 +6,20 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="css/estilo.css">
-  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link rel="shortcut icon" href="img/favicon.ico">
   <title>Tom virtual - Soluções web</title>
+
 </head>
 <body background="img/luz2.jpg">
-<header class="menu">
+
+<header id="menu" class="menu">
+
     <nav id="menu" class="menu">
       <img id="logoSimbolo" src="img/logoSimbolo2.jpg" height="40">
       <div id="solucoes">
-      Sites e sistemas web
+      <center><b>TOM VIRTUAL</b>
+        <br>
+      Sites e sistemas web</center>
     </div>
       <br>
       <img class="zoom" id="fotoPerfil2"src="img/fotoPerfil2.jpg" width="50%">
@@ -22,11 +27,12 @@
       Elton Rodrigues
     </div>
       <a class="itemMenu" href="#home">Tom Virtual</a>
-      <a class="itemMenu" href="#sobre">Serviço</a>
-      <a class="itemMenu" href="#">Currículo</a>
-      <a class="itemMenu" href="#programacao">Contato</a>
+      <a class="itemMenu" href="#programacao">Serviço</a>
+      <a class="itemMenu" href="#sobre">Currículo</a>
+      <a class="itemMenu" href="#contato">Contato</a>
       <a class="menu-ico" href="#" onclick=" return alternarMenu();"><i class="fas fa-bars"></i></a>
       <br>
+
       <div id="redesSociais">
         <a class="zoom" href="https://www.facebook.com/elton.rodrigues.315080" target="_blank"><img src="img/facebook.png" width="30px" height="30px" title="Facebook"></a>
         <a class="zoom" href="https://www.linkedin.com/in/eltonrsilva/" target="_blank"><img src="img/linkedin.jpg" width="30px" height="30px"title="Linkedin"></a>
@@ -34,7 +40,7 @@
         <a class="zoom" href="https://pt.stackoverflow.com/users/86405/elton-rodrigues" target="_blank"><img src="img/stackoverflow.jpg" width="30px" height="30px"title="Stack overflow"></a>
       </div>
       <div id="whats">
-        <a target="_blank"><img src="img/whats.png" width="30px" height="30px" title="WhatsApp">(11) 9.8865-0030</a>
+        <a><img id="mudaImg" src="img/whats.png" width="30px" height="30px" title="WhatsApp" onLoad="trocaImg();">(11) 9.8865-0030</a>
     </div>
   </nav>
 </header>
@@ -42,6 +48,7 @@
 <main>
 <section id="home" class="home">
     <!--<img src="img/logoAmar.jpg">-->
+
   <h4>Que tal dar um passo para o mundo virtual criando um site para a sua empresa? </h4>
   <h4>A Tom Virtual pode lhe ajudar!<i id="smile" class="fas fa-smile-wink"></i></i></h4>
 <i class="fas fa-desktop"><br>Desktop</i>
@@ -115,16 +122,45 @@
             <h5>Fundação Bradesco: Produção gráfica e Photoshop - 2015</h5>
           </div>
       </section>
+
+
+
 <section id="contato" class="contato">
   <h1>Entre em contato</h1>
   <div id="opcContato">
       <i class="fas fa-phone-square"></i><br>9.8865-0030
       <br><br>
       <i class="fas fa-envelope"></i><br>elton.rsilva@hotmail.com
+
   </div>
   <h3>Peça já o seu orçamento e se surpreenda!</h3>
+
 </section>
+
 </main>
+
 </div>
+
+<!--EVENTOS JS-->
+<script>
+var num = 2;
+var img = document.getElementById("mudaImg");
+function trocaImg(){
+//apenas para cunho de testes
+setTimeout(function () {
+  if (num == 1)
+    {
+      img.src = "img/whatsCor.png";
+    }
+  else if (num == 2)
+    {
+      img.src = "img/whats.png";
+    }
+    //garante que num fique alternando entre 1 e 2
+    num = (num % 2) + 1;
+  }, 1700);
+}
+</script>
+
 </body>
 </html>
