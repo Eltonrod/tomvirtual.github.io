@@ -23,9 +23,9 @@ h5{
 .menu{
   position: fixed;
   top: 0px;
-  width: 200px;
+  width: 160px;
   height: 100%;
-  background-color: black;
+  background-color: 	#2F4F4F;
   display: flex;
   justify-content: flex-start;
   padding-top: 30px;
@@ -39,6 +39,7 @@ h5{
   color: #DAA520;
   font-size: 20px;
 }
+
 .icoTec i{
   font-size: 220%;
   position: relative;
@@ -93,13 +94,13 @@ h5{
   padding-bottom: 20px;
 }
 #whats{
-  color: white;
-  align items: center;
+  color: #00ff00;
+  align-items: center;
   padding-bottom: 20px;
 }
 .corpo{
   position: absolute;
-  width: calc(100% - 200px);
+  width: calc(100% - 160px);
   right: 0;
 }
 .home{
@@ -178,8 +179,8 @@ h5{
   list-style-type: none;
 }
 .prog img{
-  width: 400px;
-  height: 300px;
+  width: 300px;
+  height: 200px;
 }
 .eventos {
   flex-shrink: 0;
@@ -233,14 +234,6 @@ main{
   flex-direction: row;
   align-items:center;
 }
-.home{
-  padding: 5px;
-  margin: 60px 15px;
-}
-.home img{
-  width: 60%;
-
-}
 .menu a{
   font-size: 12px;
   position: relative;
@@ -251,11 +244,27 @@ main{
   display: none;
 }
 .menu #logoSimbolo{
-  width: 10%;
+  width: 50px;
   margin: 0;
   position: relative;
   top: -15px;
 }
+#logoPrincipalMini{
+  margin-top: 60px;
+}
+.itemMenu{
+  display: none;
+  
+  }
+.home{
+  padding: 5px;
+  margin: 60px 15px;
+}
+.home img{
+  width: 60%;
+
+}
+
 #solucoes, #nomeDesenvolvedor{
   display: none;
 
@@ -275,10 +284,12 @@ main{
   text-align: center;
   width: 330px;
   height: 260px;
-  margin: 0 10px;
+  margin: 10px 10px;
+
   }
 .prog img{
-  width: 150px;
+  padding-top: 3%;
+  width: 180px;
   height: 100px;
   }
 .prog h3{
@@ -324,9 +335,9 @@ main{
   }
 .menu-ico{
   display: block;
-  position: absolute;
-  color: white;
-  right: 10px;
+  position: relative;
+  color: orange;
+  right: -25%;
   }
 .banner-titulo{
   font-size: 10px;
