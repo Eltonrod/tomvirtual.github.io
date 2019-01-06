@@ -37,7 +37,7 @@ h5{
   }
 .menu a:hover{
   color: #DAA520;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .icoTec i{
@@ -63,6 +63,12 @@ h5{
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
 }
+#fotoPerfil2{
+  width: 100px;
+  height: 120px;
+}
+
+
 #fotoCurriculo{
   display: none;
   width: 30%;
@@ -71,13 +77,13 @@ h5{
 .itemMenu{
   text-decoration: none;
   color: white;
-  padding: 14px 0;
+  padding: 10px 0;
   font-size: 18px;
   font-weight: bold;
   }
 #logoSimbolo{
-    border-radius: 0%;
-    width: 30%;
+    width: 60px;
+    height: 40px;
   }
 #redesSociais a{
   padding: 0 2px;
@@ -91,11 +97,11 @@ h5{
   color: #5F9EA0;
   font-size: 15px;
   font-weight: bold;
-  padding-bottom: 20px;
+  padding: 10px 0;
 }
 #whats{
-  color: #00ff00;
   align-items: center;
+  color: yellowgreen;
   padding-bottom: 20px;
 }
 .corpo{
@@ -128,22 +134,24 @@ h5{
   color: white;
   display: none;
 }
-
-.sobre{
+#logoPrincipalMini{
+  margin-top: 10px;
+}
+.curriculo{
   background-color: #FF6347;
   display: flex;
   flex-direction: row;
-  font-size: 13px;
+  font-size: 15px;
   padding: 0 2%;
   color: #483D8B;
   margin: 0 80px;
   align-items: flex-start;
 }
-.sobre h2{
+.curriculo h2{
   padding: 10px 1%;
   flex-shrink: 0;
 }
-.sobre #curriculo{
+.curriculo{
   padding: 20px 1%;
   font-size: 20px;
   align-items: center;
@@ -164,6 +172,7 @@ h5{
   box-shadow: 0px 0px 30px 10px #F08080;
   text-align: center;
   background: white;
+  
 }
 .prog h3{
   margin: 0;
@@ -186,7 +195,7 @@ h5{
   flex-shrink: 0;
   margin: 0;
   justify-content:space-between;
-  text-align: center;
+  text-align: center; 
 }
 .programacao{
   background: #B0C4DE;
@@ -360,22 +369,21 @@ main{
   margin-top: 5%;
   height: 100px;
 }
-.sobre{
+.curriculo{
   display: flex;
   flex-direction: column;
   margin: 0;
-
 }
 h1, h5, p{
-  font-size: 16px;
+  font-size: 18px;
 }
-.sobre h2{
+.curriculo h2{
   text-align: center;
   flex-shrink: 0;
   padding: 0;
-  font-size: 15px;
+  font-size: 19px;
 }
-.sobre #curriculo{
+.curriculo{
   padding: 0;
   font-size: 20px;
   text-align: justify;
