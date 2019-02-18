@@ -6,6 +6,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="css/estilo.css">
+  <script type="text/JavaScript" src="js/eventos.js"></script>
   <link rel="shortcut icon" href="img/favicon.ico">
   <title>Tom virtual - Soluções web</title>
   <meta name="description" content="Desenvolvimento de sites, sistemas web e assessoria em TI para o seu negócio."
@@ -20,7 +21,8 @@
   <meta property="article:author" content="Elton Rodrigues">
 
 </head>
-<body background="img/luz2.jpg">
+<body onload="aviso()">
+  <!--colar no body se quiser imagem de fundo: background="img/luz2.jpg" -->
 
 <header id="menu" class="menu">
 
@@ -29,6 +31,7 @@
     <div id="solucoes">
       Sites e sistemas web
     </div>
+    <p style="background: yellow; text-align: center; font-weight: bold">SITE EM CONSTRUÇÃO</p>
       <br>
       <img class="zoom" id="fotoPerfil2"src="img/fotoPerfil2.jpg" width="50%">
         <div id="nomeDesenvolvedor">
@@ -38,10 +41,8 @@
         <a class="itemMenu" href="#programacao">Serviço</a>
         <a class="itemMenu" href="#sobre">Currículo</a>
         <a class="itemMenu" href="#contato">Contato</a>
-        <a class="menu-ico" href="#"><i class="fas fa-bars"></i></a>
-        <br>
+<!--        <a class="menu-ico" href="#"><i class="fas fa-bars"></i></a>-->
         <div id="redesSociais">
-          <a class="zoom" href="https://www.facebook.com/elton.rodrigues.315080" target="_blank"><img src="img/facebook.png" width="30px" height="30px" title="Facebook"></a>
           <a class="zoom" href="https://www.linkedin.com/in/eltonrsilva/" target="_blank"><img src="img/linkedin.jpg" width="30px" height="30px"title="Linkedin"></a>
           <a class="zoom" href="https://github.com/Eltonrod" target="_blank"><img src="img/github.png" width="30px" height="30px"title="GitHub"></a>
           <a class="zoom" href="https://pt.stackoverflow.com/users/86405/elton-rodrigues" target="_blank"><img src="img/stackoverflow.jpg" width="30px" height="30px"title="Stack overflow"></a>
@@ -55,18 +56,18 @@
 <div class="corpo">
 <main>
   <center><img id="logoPrincipalMini" src="img/logoPrincipalMini.gif"></center>
+  <p id="manu" style="background: orangered; font-size: 20px; text-align: center; font-weight: bold"></p>
   <section id="home" class="home">
-    <h4>Que tal dar um passo para o mundo virtual criando um site para a sua empresa? </h4>
-    <h4>A Tom Virtual pode lhe ajudar!<i id="smile" class="fas fa-smile-wink"></i></i></h4>
+    <h4>Desenvolvimento de sites, landpages e sistemas web em geral. <i id="smile" class="fas fa-smile-wink"></i></h4>
     <i class="fas fa-desktop"></i>
     <i class="fas fa-mobile-alt"></i>
     <i class="fas fa-tablet-alt"></i>
-    <h4>Em um mundo cada vez mais digital, um site ou um sistema online é fundamental para qualquer negócio.</h4>
+    <h3>Um página dinâmica e que se adeque ao computador, smartphone ou table do usuário, fará a diferença da sua empresa na rede. <br>Solicite um orçamento e se surpreenda!</h3>
   </section>
   <section id="programacao" class="programacao">
     <div id="tituloServico">
       <h1>SERVIÇO</h1>
-      <h3>Fazer uso das principais ferramentas do mercado e técnicas de responsividade, onde as páginas se adequem ao aparelho do cliente: celular, tablet ou desktop.</h3>
+     <!-- <h3>Fazer uso das principais ferramentas do mercado e técnicas de responsividade, onde as páginas se adequem ao aparelho do cliente: celular, tablet ou desktop.</h3>-->
     </div>
     <div class="eventos">
       <div class="icoTec">
@@ -75,38 +76,33 @@
          <i class="fab fa-css3-alt"></i>
          <i class="fab fa-js"></i>
          <i class="fab fa-python"></i>
-         <i class="fas fa-file-code"></i>
       </div>
       <div id="programacao1" class="prog">
          <h3>Construção de sites</h3>
          <img src="img/ferramentas.jpg">
          <ul>
-          <li>Desenvolvimento de páginas web</li>
-          <li>Sites estáticos ou interativos com seus usuários</li>
+          <li>Desenvolvimento de páginas web estáticas, dinâmicas em que haja interação com o usuário.</li>
          </ul>
       </div>
       <div id="programacao2" class="prog">
         <h3>Manutenção de páginas</h3>
         <img src="img/manutencao.png">
           <ul>
-           <li>Manutenção de páginas existentes</li>
-           <li>Modernização e novas funcionalidades nas páginas</li>
+           <li>Manutenção de páginas existentes, modernização ou novas funcionalidades para as páginas</li>
            </ul>
       </div>
       <div id="programacao3" class="prog">
         <h3>Sistemas Web</h3>
         <img src="img/sistemaWeb.png">
          <ul>
-          <li>Controle o seu negócio onde estiver via internet</li>
-          <li>Gestão de negócios na palma da mão</li>
+          <li>Controle o seu negócio de onde estiver via internet. Sistemas de gestão de negócios na palma da mão</li>
          </ul>
       </div>
       <div id="programacao4" class="prog">
         <h3>Ações promocionais</h3>
         <img src="img/marketing.png">
          <ul>
-          <li>Landpages para promoções de novos produtos ou serviços</li>
-          <li>E-mail marketing personalizados e ações em redes sociais</li>
+          <li>Landpages para promoções de novos produtos ou serviços. E-mail marketing personalizado e ações em redes sociais</li>
         </ul>
       </div>
       <div id="programacao7" class="">
@@ -120,7 +116,7 @@
      <img id="fotoCurriculo"class="zoom" id="fotoPerfil2"src="img/fotoPerfil2.jpg" width="50%">
      <p>Fuçador por natureza. Sempre recebendo bons <i>feedbacks</i> pela capacidade em buscar respostas e soluções para problemas. Desse modo, a carreira se desenvolveu em setores comerciais, administrativos e <i>supply chain</i>. Sempre com destante em funções envolvendo tecnologias. Tendo experiências em sistemas SAP, Microsiga, BI, Excel para montagem de KPI’s e relatórios, entre outras tecnologias.</p>
      <p>Formado em <i>análise e desenvolvimento de sistemas</i>, pela Unip. Estudante de <i>engenharia da computação</i> pela Universidade virtual do estado de São Paulo, a UNIVESP. Sempre em busca por atualizações e novas tecnologias para desenvolver novos projetos e sempre se colocando em contato com salas de aulas e profissionais da área. <br>Abaixo cursos recentes e que possibilitaram novos aperfeiçoamentos: </p>
-     <h5>Udemy: machine learning e data science com python - Em curso</h5>
+     <h5>IME_USP: Curso de verão de interfaces Web - 2019</h5>
      <h5>Senac: Programador web com HTML, CSS, PHP, JavaScript e MySQL - 2018</h5>
      <h5>IDPH: Seminário intensivo instrumental: Como falar outros idiomas – 2018 </h5>
      <h5>SENAI: Instalador-Reparador de Redes com cabeamento estruturado - 2017</h5>
@@ -133,7 +129,7 @@
     <h1>Entre em contato</h1>
       <div id="opcContato">
         <i class="fas fa-phone-square"></i><br>(11) 9.8865-0030
-        <br><br>
+        <br>
         <i class="fas fa-envelope"></i><br>elton.rsilva@hotmail.com
       </div>
   </section>
