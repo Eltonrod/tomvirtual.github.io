@@ -121,6 +121,7 @@ h5{
   display: block;
 }
 
+
 #home div{
   text-align: center;
   background: #FFA500;
@@ -129,9 +130,26 @@ h5{
   font-family: "Lucida Bright", "Georgia", "serif";
   border-radius: 5px 60px ;
   padding: 10px;
-  margin: 60px;
+  margin: 30px 130px;
   text-align: center;
   }
+  #msgHome{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    }
+  #msgHome span{
+    text-align: center;
+    background: seagreen;
+    opacity:0.78;
+    color: black;
+    font-family: "Lucida Bright", "Georgia", "serif";
+    border-radius: 60px 5px ;
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+    font-size: 12px;
+    }
   #smile{
     padding: 0;
   }
@@ -267,6 +285,17 @@ main{
   position: relative;
   font-size: 17px;
   top: -15px;
+}
+
+#opcMenu{
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+#opcMenu a{
+  padding: 0 20px;
+  justify-content: space-between;
+  
 }
 .menu #fotoPerfil2, #redesSociais, #whats{
   display: none;
