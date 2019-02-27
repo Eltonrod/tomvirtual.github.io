@@ -116,11 +116,12 @@ h5{
 
 .corpoDoSite{
   display: none;
+  margin-top: 20px;
 }
 #home{
   display: block;
+  width: 100%;
 }
-
 
 #home div{
   text-align: center;
@@ -130,13 +131,14 @@ h5{
   font-family: "Lucida Bright", "Georgia", "serif";
   border-radius: 5px 60px ;
   padding: 10px;
-  margin: 30px 130px;
+  margin: 10px 10%;
   text-align: center;
   }
   #msgHome{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    margin: 0 10%;
     }
   #msgHome span{
     text-align: center;
@@ -145,10 +147,9 @@ h5{
     color: black;
     font-family: "Lucida Bright", "Georgia", "serif";
     border-radius: 60px 5px ;
-    padding: 20px;
-    margin: 5px;
+    padding: 0 15%;
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
     }
   #smile{
     padding: 0;
@@ -234,14 +235,12 @@ h5{
   flex-shrink: 0;
   margin: 0;
   justify-content:space-between;
-  text-align: center; 
 }
 #programacao{
   background: #B0C4DE;
   z-index:1;
   opacity:.9;
-  padding-top: 1px;
-  padding-bottom: 25px;
+  width: 100%;
 }
 #programacao i{
   background: #F08080;

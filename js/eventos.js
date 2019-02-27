@@ -17,7 +17,7 @@ setTimeout(function () {
 
 function aviso(){
   alert("Olá, só quero avisar que o site está em construção ainda.");
- document.getElementById('manu').innerHTML="O site está em processo de construção";
+ document.getElementById('manu').innerHTML="O site está em construção";
 }
 
 function paginaHome(){
@@ -25,21 +25,17 @@ function paginaHome(){
   document.getElementById('curriculo').style.display="none";
   document.getElementById('contato').style.display="none";
   document.getElementById('programacao').style.display="none";
-  document.getElementById('servico').style.display="none";
-}
+ }
 function paginaProgramacao(){
   document.getElementById('programacao').style.display="block";
   document.getElementById('contato').style.display="none";
   document.getElementById('curriculo').style.display="none";
   document.getElementById('home').style.display="none";
-  document.getElementById('servico').style.display="none";
-
-}
+ }
 function paginaCurriculo(){
   document.getElementById('curriculo').style.display="block";
   document.getElementById('programacao').style.display="none";
   document.getElementById('home').style.display="none";
-  document.getElementById('servico').style.display="none";
   document.getElementById('contato').style.display="none";
 }
 function paginaContato(){
@@ -47,5 +43,4 @@ function paginaContato(){
   document.getElementById('curriculo').style.display="none";
   document.getElementById('programacao').style.display="none";
   document.getElementById('home').style.display="none";
-  document.getElementById('servico').style.display="none";
-}
+ }
